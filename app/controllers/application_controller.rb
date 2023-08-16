@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
     def index
-        @characters = Character.all
-        end
+        @Character= Character.all
+    end
 end
