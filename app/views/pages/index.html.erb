@@ -1,9 +1,8 @@
 <h1>Pages#index</h1>
 <p>Find me in app/views/pages/index.html.erb</p>
 
-<% @Character.each do |a| %>
-<%#= image_tag "#{a.url_image}" %>
-<h2><%= a.name %></h2>
-<p><%= a.location %></p>
-<p><%= a.house %></p>
+<% @characters.each do |a| %>
+    <h2>Personaje: <%= a.name %></h2>
+    <p>Locacion: <%= a.location %></p>
+    <p>Casa:     <%= a.house %></p>
 <% end%>
